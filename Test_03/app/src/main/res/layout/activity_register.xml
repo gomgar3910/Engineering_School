@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp"
+                />
+
+            <EditText
+                android:id="@+id/ID_EditText"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="비밀번호"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/Password_EditText"
+                android:inputType="textPassword"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="비밀번호 확인"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/Confirm_Password_EditText"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="이름"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/Name_EdiText"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="이메일"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/Email_EdiText"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="전화번호"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/Phone_Number_EdiText"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                />
+
+            <Button
+                android:id="@+id/Register_Button"
+                android:onClick="CreateId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="회원가입"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
